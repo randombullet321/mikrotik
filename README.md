@@ -28,7 +28,7 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 12. Next step is unique to devices bought after mid 2025. ```You must activate advanced mode```
 
-13. Go to the the left side and select ```New Terminal```. You'll need to put in your new password as it was changed before.
+13. Go to the left side and select ```New Terminal```. You'll need to put in your new password as it was changed before.
 
 14. Copy and paste ```system/device-mode/print``` into the terminal. It should be ```home``` or ```basic```.
 
@@ -46,7 +46,7 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 2. The most important things I would focus on here is your Wireless configs on the top left. You can set 2.4GHz and 5GHz to the same name to help with AP roaming.
 
-3. Make sure you've set the right contry for WiFi so you're not in violation of any EMI laws.
+3. Make sure you've set the right country for WiFi so you're not in violation of any EMI laws.
 
 4. Your WAN port on the top right.
 
