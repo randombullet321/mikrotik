@@ -137,15 +137,17 @@ This is if you want to move away from the 192.168.88.0/24 subnet
 
 5. Next go to ```IP``` > ```DHCP Server``` and double click on ```defconf``` and set the ```Address Pool``` to ```Default_DHCP``` as created above.
 
-6. Next go to ```IP``` > ```DHCP Server``` > ```Networks``` and double click the ```defconf```
+6. You can also set the lease time to 24 hours to reduce broadcast messages on the network.
 
-7. This is the part where you are defining the DHCP scope. So input your subnet, gateway, and DNS servers. (You can setup any DNS server for now.)
+7. Next go to ```IP``` > ```DHCP Server``` > ```Networks``` and double click the ```defconf```
+
+8. This is the part where you are defining the DHCP scope. So input your subnet, gateway, and DNS servers. (You can setup any DNS server for now.)
 
    * ```Address:``` 192.168.193.0/24
    * ```Gateway:``` 192.168.193.1
    * ```DNS Servers:``` 192.168.193.1
   
-8. Click ```Apply``` then ```OK```
+9. Click ```Apply``` then ```OK```
 
 ### Changing the LAN Gateway
 
