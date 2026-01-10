@@ -46,7 +46,7 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 ```Quick Set``` has created more issues than it solves. I would be very careful of setting this up. Do not use this method unless you want to tear your hair out. I've had it successfully done maybe 3/10 times so far.
 
-In the files above, I've created a new file about custom configurations. You can navigate to it [here](https://github.com/randombullet321/mikrotik/blob/server_projects/custom%20configurations.md).
+In the files above, I've created a new file about custom configurations. You can navigate to it [here](https://github.com/randombullet321/mikrotik/blob/server_projects/Custom%20Configurations.md).
 
 1. You can use the ```Quick Set``` button on the top left for ease of use.
 
