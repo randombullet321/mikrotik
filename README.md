@@ -56,6 +56,6 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 7. Setup your LAN subnet, click on ```Bridge All LAN Ports```, ```DHCP Server```, and ```NAT```
 
-8. Your setup should look like this.
+8. Your setup should look like this. Then hit Apply. This will take some time, but you should be able to log into your router with your new IP address and your new password.
 
 <img width="880" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/46cee861-6752-4f86-ac63-2e8c7b1094d1" />
