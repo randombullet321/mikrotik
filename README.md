@@ -16,7 +16,7 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 6. Open up Winbox and type in ```192.168.88.1``` in the "Connect To:" box then ```admin``` in the "Login:" box, and the password on the back of your router.
 
-<img width="667" height="562" alt="Untitled" src="https://github.com/user-attachments/assets/edb504da-9408-40b0-9cfe-37e840451314" />
+<img width="667" height="562" alt="Untitled" src="https://github.com/user-attachments/assets/6a3e90da-e632-423b-8bf1-514e3b42d851" />
 
 9. You should be greeted with the default configuration.
 
