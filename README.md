@@ -36,7 +36,15 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 16. Reboot the router and wait for it to come back up and log in again. Finally copy and paste ```system/device-mode/print``` and verify that it says ```advanced```.
 
+17. Your initial configuration is complete.
+
 # Custom Configurations
+
+1. I would recommend just using the ```Quick Set``` button on the top left for ease of use.
+
+<img width="826" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/ac34e070-6906-4aba-b23a-fa10a00471e7" />
+
+2. The most important things I would focus on here is your Wireless configs on the top left
 
 ## Changing your subnet
 
