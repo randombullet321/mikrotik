@@ -84,7 +84,7 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
 
     ````/certificate import file-name=cacert.pem passphrase=""````
 
-14. 
+14. You should see about 100+ keys imported. You can verify this by going to ```System``` > ```Certificates```
 
 ## Changing LAN subnet and DHCP
 
