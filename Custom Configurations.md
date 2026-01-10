@@ -52,13 +52,27 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
 
    * ```Name:``` CA-Cert_Helper
    * ```Start Date:``` today
-   * ```Start Time:``` 01:00:00
-   * ```Interval``` 7d 00:00:10
+   * ```Start Time:``` 01:00:10
+   * ```Interval``` 7d 00:00:00
    * On the bottom where it says ```On Event:``` paste ```/certificate import file-name=cacert.pem passphrase=""``` into the box.
   
 7. Do note that the helper script is 10 seconds after the first script. This allows time for the device to download the CAs. If the helper script is too fast, then there is no ```file-name=cacert.pem``` downloaded yet and no certs are imported.
 
-8. Finally, with all certs, there is a valid start and end date of the cert. Without an authoratative timesources, certs could be expired but our device can still be using them.
+8. Finally, with all certs, there is a valid start and end date of the cert. Without an authoratative timesources, certs could be expired but our device can still be using them. This is why we need to setup the NTP server
+
+9. Got to ```System``` > ```NTP Client``` and check ```Enabled```
+
+    * ```Mode:``` Unicast
+    * Click on the down arrow to add a field
+    * ```NTP Servers:``` pool.ntp.org
+    * Click on the down arrow to add another field
+    * ```0.pool.ntp.org```
+    * ```1.pool.ntp.org```
+    * ```2.pool.ntp.org```
+    * ```3.pool.ntp.org```
+    * ```VRF:``` Main
+  
+10. It might take some time for it to sync. Once it syncs, you should see ```Synced Stratum:``` 2. This is correct. You can read about Stratums [here](https://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata).
 
 ## Changing LAN subnet and DHCP
 
