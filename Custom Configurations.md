@@ -78,11 +78,11 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
 
 12. First copy and paste
 
-    /tool fetch url=https://curl.se/ca/cacert.pem
+    ````/tool fetch url=https://curl.se/ca/cacert.pem````
 
 13. Then copy and paste
 
-    /certificate import file-name=cacert.pem passphrase=""
+    ````/certificate import file-name=cacert.pem passphrase=""````
 
 14. 
 
