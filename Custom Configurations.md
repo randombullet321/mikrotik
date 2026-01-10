@@ -74,6 +74,18 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
   
 10. It might take some time for it to sync. Once it syncs, you should see ```Synced Stratum:``` 2. This is correct. You can read about Stratums [here](https://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata).
 
+11. Finally, lets force the CA pull. Open a ```New Terminal```
+
+12. First copy and paste
+
+    /tool fetch url=https://curl.se/ca/cacert.pem
+
+13. Then copy and paste
+
+    /certificate import file-name=cacert.pem passphrase=""
+
+14. 
+
 ## Changing LAN subnet and DHCP
 
 1. First setup your IP Pool by going to ```IP``` > 
