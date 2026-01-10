@@ -133,6 +133,26 @@ This is if you want to move away from the 192.168.88.0/24 subnet
 
 3. Click ```Apply``` then ```OK```
 
-### Changing the LAN Network
+4. Delete the default config.
+
+5. Next go to ```IP``` > ```DHCP Server``` and double click on ```defconf``` and set the ```Address Pool``` to ```Default_DHCP``` as created above.
+
+6. Next go to ```IP``` > ```DHCP Server``` > ```Networks``` and double click the ```defconf```
+
+7. This is the part where you are defining the DHCP scope. So input your subnet, gateway, and DNS servers. (You can setup any DNS server for now.)
+
+   * ```Address:``` 192.168.193.0/24
+   * ```Gateway:``` 192.168.193.1
+   * ```DNS Servers:``` 192.168.193.1
+  
+8. Click ```Apply``` then ```OK```
+
+### Changing the LAN Gateway
 
 1. Go to ```IP``` > ```Addresses```
+
+2. Double click on the defconf the ```192.168.88.1/24``` address
+
+3. Change the Address to ```192.168.193.1/24``` and the Network to ```192.168.193.0```, ensure the Interface is set to bridge. (You will lose internet connectivity at this point. Don't fret)
+
+4. Next either reconnect your wire or do a DHCP release/renew. You should be good to go on the wired side.
