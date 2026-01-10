@@ -44,8 +44,18 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 <img width="826" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/ac34e070-6906-4aba-b23a-fa10a00471e7" />
 
-2. The most important things I would focus on here is your Wireless configs on the top left
+2. The most important things I would focus on here is your Wireless configs on the top left. You can set 2.4GHz and 5GHz to the same name to help with AP roaming.
 
-## Changing your subnet
+3. Make sure you've set the right contry for WiFi so you're not in violation of any EMI laws.
 
-1. 
+4. Your WAN port on the top right.
+
+5. You need to set ```Address Acquisition:``` to Automatic unless you have PPPoE WAN or a static IP for WAN.
+
+6. You can change your MAC address here if you'd like. I usually don't, but I've generated a randomized one for this example.
+
+7. Setup your LAN subnet, click on ```Bridge All LAN Ports```, ```DHCP Server```, and ```NAT```
+
+8. Your setup should look like this.
+
+<img width="880" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/46cee861-6752-4f86-ac63-2e8c7b1094d1" />
