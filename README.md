@@ -40,6 +40,8 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 # Custom Configurations
 
+## DO NOT GO FURTHER UNLESS YOU READ THE WARNING
+
 **Forwarning:**
 
 ```Quick Set``` has created more issues than it solves. I would be very careful of setting this up. Do not use this method unless you want to tear your hair out.
