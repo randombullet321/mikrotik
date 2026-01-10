@@ -50,7 +50,7 @@ Special note, if you see something in a code box ```like this``` you can triple 
 
 In the files above, I've created a new file about custom basic configurations. You can navigate to it [here](https://github.com/randombullet321/mikrotik/blob/server_projects/Custom%20Basic%20Configurations.md).
 
-**You've been warned**
+##You've been warned
 
 1. You can use the ```Quick Set``` button on the top left for ease of use.
 
