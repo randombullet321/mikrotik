@@ -42,11 +42,13 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 ## DO NOT GO FURTHER UNLESS YOU READ THE WARNING
 
-**Forwarning:**
+**Forewarning:**
 
-```Quick Set``` has created more issues than it solves. I would be very careful of setting this up. Do not use this method unless you want to tear your hair out.
+```Quick Set``` has created more issues than it solves. I would be very careful of setting this up. Do not use this method unless you want to tear your hair out. I've had it successfully done maybe 3/10 times so far.
 
-1. I would recommend just using the ```Quick Set``` button on the top left for ease of use.
+In the files above, I've created a new file about custom configurations. You can navigate to it here.
+
+1. You can use the ```Quick Set``` button on the top left for ease of use.
 
 <img width="826" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/ac34e070-6906-4aba-b23a-fa10a00471e7" />
 
