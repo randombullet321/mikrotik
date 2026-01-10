@@ -1,6 +1,6 @@
 # Setting up
 
-1. Connect to you router via winbox using the MAC address. It might be a little less reliable, but since we're going to be messing with the LAN address, we don't want to get disconnected by accident.
+1. Connect to you router via Winbox using the MAC address. It might be a little less reliable, but since we're going to be messing with the LAN address, we don't want to get disconnected by accident.
 
 ## Security first
 
@@ -28,7 +28,7 @@ So like with any warning, don't blindly copy and paste scripts.
 
 We have 2 scripts that we'll be setting up.
 
-The script ```/tool fetch url=https://curl.se/ca/cacert.pem``` pulls CA certs from ```https://curl.se/ca/cacert.pem``` without validating the SSL certificate. This is a bit dangerous since anyone can poision your DNS server and point you to the wrong address (MITM attack). However, this is extremely unlikely and since you are using the ISP's DNS servers, there limited danger doing this.
+The script ```/tool fetch url=https://curl.se/ca/cacert.pem``` pulls CA certs from ```https://curl.se/ca/cacert.pem``` without validating the SSL certificate. This is a bit dangerous since anyone can poison your DNS server and point you to the wrong address (MITM attack). However, this is extremely unlikely and since you are using the ISP's DNS servers, there limited danger doing this.
 
 The other script ```/certificate import file-name=cacert.pem passphrase=""``` uses the Mikrotik tool to import the CA certificates that we pulled from ```https://curl.se/ca/cacert.pem```. This allows the device to validate SSL certs to prevent MITM attacks.
 
@@ -60,7 +60,7 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
 
 ### Syncing the time
 
-1. Finally, with all certs, there is a valid start and end date of the cert. Without an authoratative timesources, certs could be expired but our device can still be using them. This is why we need to setup the NTP server
+1. Finally, with all certs, there is a valid start and end date of the cert. Without an authoritative time sources, certs could be expired but our device can still be using them. This is why we need to setup the NTP client
 
 2. Got to ```System``` > ```NTP Client``` and check ```Enabled```
 
@@ -104,8 +104,35 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
    * www
    * www-ssl
 
-4. Next we go into the firewall to update firewall settings
+4. Next we go into the firewall to update the default firewall settings.
+
+5. Go to ```IP``` > ```Firewall```
+
+6. Disable the following
+
+   * defconf: accept to local loopback (for CAPsMAN)
+   * defconf: accept in ipsec policy
+   * defconf: accept out ipsec policy
+  
+7. We're going to modify the ```defconf: accept ICMP``` as we want to drop all WAN ICMP requets
+
+  * Go to the top tab and click on ```Action``` and select ```drop```, then change the comment to ```defconf: drop ICMP```
 
 ## Changing LAN subnet and DHCP
 
-1. First setup your IP Pool by going to ```IP``` > 
+This is if you want to move away from the 192.168.88.0/24 subnet
+
+### Creating the LAN DCHP Pool
+
+1. First setup your IP Pool by going to ```IP``` > ```Pool```
+
+2. We are going to define our DHCP Pool by clicking on the blue ```+```
+
+   * ```Name:``` Default_DHCP
+   * ```Addresses:``` 192.168.193.50-192.168.193.250
+
+3. Click ```Apply``` then ```OK```
+
+### Changing the LAN Network
+
+1. Go to ```IP``` > ```Addresses```
