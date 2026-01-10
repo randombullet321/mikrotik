@@ -58,9 +58,11 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
   
 7. Do note that the helper script is 10 seconds after the first script. This allows time for the device to download the CAs. If the helper script is too fast, then there is no ```file-name=cacert.pem``` downloaded yet and no certs are imported.
 
-8. Finally, with all certs, there is a valid start and end date of the cert. Without an authoratative timesources, certs could be expired but our device can still be using them. This is why we need to setup the NTP server
+### Syncing the time
 
-9. Got to ```System``` > ```NTP Client``` and check ```Enabled```
+1. Finally, with all certs, there is a valid start and end date of the cert. Without an authoratative timesources, certs could be expired but our device can still be using them. This is why we need to setup the NTP server
+
+2. Got to ```System``` > ```NTP Client``` and check ```Enabled```
 
     * ```Mode:``` Unicast
     * Click on the down arrow to add a field
@@ -72,19 +74,37 @@ The other script ```/certificate import file-name=cacert.pem passphrase=""``` us
     * ```3.pool.ntp.org```
     * ```VRF:``` Main
   
-10. It might take some time for it to sync. Once it syncs, you should see ```Synced Stratum:``` 2. This is correct. You can read about Stratums [here](https://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata).
+3. It might take some time for it to sync. Once it syncs, you should see ```Synced Stratum:``` 2. This is correct. You can read about Stratums [here](https://en.wikipedia.org/wiki/Network_Time_Protocol#Clock_strata).
 
-11. Finally, lets force the CA pull. Open a ```New Terminal```
+4. Finally, lets force the CA pull. Open a ```New Terminal```
 
-12. First copy and paste
+5. First copy and paste
 
     ````/tool fetch url=https://curl.se/ca/cacert.pem````
 
-13. Then copy and paste
+6. Then copy and paste
 
     ````/certificate import file-name=cacert.pem passphrase=""````
 
-14. You should see about 100+ keys imported. You can verify this by going to ```System``` > ```Certificates```
+7. You should see about 100+ keys imported. You can verify this by going to ```System``` > ```Certificates```
+
+### Closing unnecessary ports
+
+1. We are closing port that we won't need.
+
+2. Go to ```IP``` > ```Services```
+
+3. Disable the following (You can hold control and select lines for multiple selections)
+
+   * api
+   * api-ssl
+   * ftp
+   * ssh
+   * telnet
+   * www
+   * www-ssl
+
+4. Next we go into the firewall to update firewall settings
 
 ## Changing LAN subnet and DHCP
 
