@@ -70,4 +70,4 @@ In the files above, I've created a new file about custom configurations. You can
 
 <img width="880" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/46cee861-6752-4f86-ac63-2e8c7b1094d1" />
 
-9. Sometime the script does not work completly, which is annoying.
+9. Sometime the script does not work completely, which is annoying hence the warning.
