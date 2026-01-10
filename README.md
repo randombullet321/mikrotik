@@ -52,7 +52,7 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 5. You need to set ```Address Acquisition:``` to Automatic unless you have PPPoE WAN or a static IP for WAN.
 
-6. You can change your MAC address here if you'd like. I usually don't, but I've generated a randomized one for this example.
+6. You can change your MAC address here if you'd like. I don't recommend it as it causes more issues. I usually don't, but I've generated a randomized one for this example.
 
 7. Setup your LAN subnet, click on ```Bridge All LAN Ports```, ```DHCP Server```, and ```NAT```
 
