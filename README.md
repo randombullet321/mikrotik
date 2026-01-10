@@ -4,6 +4,8 @@ For this example I'll be using a [hAP ax S](https://mikrotik.com/product/hap_ax_
 
 This guide is pretty agnostic so you can follow along with a different Mikrotik Router.
 
+Special note, if you see something in a code box ```like this``` you can triple click it to highlight the entire box for easier copy and pasting.
+
 # Getting started
 
 1. Plug in your power, there is no on/off switch so the device will turn on automatically.
