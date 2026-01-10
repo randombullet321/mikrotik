@@ -40,6 +40,10 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 # Custom Configurations
 
+**Forwarning:**
+
+```Quick Set``` has created more issues than it solves. I would be very careful of setting this up. Do not use this method unless you want to tear your hair out.
+
 1. I would recommend just using the ```Quick Set``` button on the top left for ease of use.
 
 <img width="826" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/ac34e070-6906-4aba-b23a-fa10a00471e7" />
@@ -59,3 +63,5 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 8. Your setup should look like this. Then hit Apply. This will take some time, but you should be able to log into your router with your new IP address and your new password.
 
 <img width="880" height="614" alt="Untitled" src="https://github.com/user-attachments/assets/46cee861-6752-4f86-ac63-2e8c7b1094d1" />
+
+9. Sometime the script does not work completly, which is annoying.
