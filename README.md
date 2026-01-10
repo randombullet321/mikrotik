@@ -26,7 +26,15 @@ This guide is pretty agnostic so you can follow along with a different Mikrotik 
 
 11. After you hit OK, you must change the password before you go any further. Go ahead and do so.
 
-12. Next step is unique to devices bought after 
+12. Next step is unique to devices bought after mid 2025. ```You must activate advanced mode```
+
+13. Go to the the left side and select ```New Terminal```. You'll need to put in your new password as it was changed before.
+
+14. Copy and paste ```system/device-mode/print``` into the terminal. It should be ```home``` or ```basic```.
+
+15. Copy and paste ```system/device-mode/update mode=advanced```. It will ask you to reboot or hit the reset button on the router.
+
+16. Reboot the router and wait for it to come back up and log in again. Finally copy and paste ```system/device-mode/print``` and verify that it says ```advanced```.
 
 # Custom Configurations
 
