@@ -30,4 +30,5 @@ This is pretty easy but with some nuances.
 
 ## Quick references by country
 [WiFi 2.4GHz Standards](https://en.wikipedia.org/wiki/List_of_WLAN_channels#2.4_GHz_(802.11b/g/n/ax/be))
+
 [WiFi 5GHz Standards](https://en.wikipedia.org/wiki/List_of_WLAN_channels#5_GHz_(802.11a/h/n/ac/ax/be))
