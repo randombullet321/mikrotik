@@ -50,6 +50,8 @@ Action tab
 
 Now create another rule for 53/TCP (Remember to add a comment for future you. "Redirect 53 (TCP)")
 
+General tab
+
 *  ```Chain:```dstnat
 *  ```Protocol:```6 (tcp)
 *  ```Dst. Port:```53
