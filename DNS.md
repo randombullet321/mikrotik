@@ -32,7 +32,7 @@ If you block those IPs, then services could potentially break. How do you go aro
 
 Go to ```IP``` > ```Firewall``` > ```NAT```
 
-Add a new rule.
+Add a new rule. (Remember to add a comment for future you. "Redirect 53 (UDP)")
 
 General tab
 
@@ -43,5 +43,21 @@ General tab
 Action tab
 
 *  ```Action:```dstnat
+*  ```To Addresses:```192.168.193.1 (Your router's IP address)
+*  ```To Ports:```53
+
+```Apply``` then ```OK```
+
+Now create another rule for 53/TCP (Remember to add a comment for future you. "Redirect 53 (TCP)")
+
+*  ```Chain:```dstnat
+*  ```Protocol:```6 (tcp)
+*  ```Dst. Port:```53
+
+Action tab
+
+*  ```Action:```dstnat
+*  ```To Addresses:```192.168.193.1 (Your router's IP address)
+*  ```To Ports:```53
 
 ```Apply``` then ```OK```
