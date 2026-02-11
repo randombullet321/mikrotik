@@ -29,3 +29,19 @@ Hit ```Apply``` then ```OK``` and finally hit ```Reload``` on top. You should se
 Here we're getting into firewalls. Some devices like Google home have hard coded DNS servers like 8.8.8.8 or 8.8.4.4. Additionally, your very smart kids can also bypass by setting up their own DNS.
 
 If you block those IPs, then services could potentially break. How do you go around this? By setting up a redirection rule.
+
+Go to ```IP``` > ```Firewall``` > ```NAT```
+
+Add a new rule.
+
+General tab
+
+*  ```Chain:```dstnat
+*  ```Protocol:```17 (udp)
+*  ```Dst. Port:```53
+
+Action tab
+
+*  ```Action:```dstnat
+
+```Apply``` then ```OK```
